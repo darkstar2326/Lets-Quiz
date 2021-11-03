@@ -1,0 +1,61 @@
+html{
+    background-color: black;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+nav{
+    float:right; 
+    background-color: black;
+}
+
+.container{
+    clear:both;
+    overflow:auto;
+  }
+
+  .logo img{
+    float:left;
+}
+
+ul li{
+  display: inline-block; 
+  padding:10px;
+  font-size:20px; 
+  font-family:raleway; 
+  color: white;
+  transition: 1s;
+}
+
+ul li:hover{
+  color:orange;
+  cursor: pointer;
+}
+
+a:link {
+    text-decoration: none;
+    color: #ddd;
+  }
+  
+  a:visited {
+    text-decoration: none;
+    color: #ddd;
+  }
+  
+  a:hover {
+    text-decoration: none;
+    color: orange;
+    transition: 1s;
+  }
+  
+  a:active {
+    text-decoration: none;
+    color: #ddd;
+  }
+
+  #welh1{
+    text-align: center;
+    border-color: white;
+    border-width: 2px;
+    font-family: 'Raleway', sans-serif;font-family: 'Raleway', sans-serif;
+}
