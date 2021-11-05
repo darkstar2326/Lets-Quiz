@@ -59,3 +59,50 @@ a:link {
     border-width: 2px;
     font-family: 'Raleway', sans-serif;font-family: 'Raleway', sans-serif;
 }
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+  padding: 5px;
+}
+
+#a, #g {
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  ;
+}
+
+.pic {
+  float: left;
+}
+
+#wrapper {
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 5%;
+list-style-type: none;
+text-decoration: none;
+}
+
+#wrapper:hover{
+  color: white !important;
+  cursor: default !important;
+}
+
+.pa{
+  float: right;
+  text-decoration: none;
+}
+
+p{
+  float: right;
+  margin-left: 80%;
+}
+
+ul li:hover{
+  cursor: default;
+  color: white;
+}
