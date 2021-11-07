@@ -176,7 +176,7 @@
             <hr>
             <h1 id="welh1"><span style='border:2px black solid;'>Scanned TextBooks<br>By<br>Let's Quiz</span></h1>
             <div id="box">
-                <select>
+                <select id="cardtype">
                     <option>Please Select Class</option>
                     <option>Class 1</option>
                     <option>Class 2</option>
@@ -208,6 +208,15 @@ var MenuItems = document.getElementById("MenuItems");
                 }
             }
            
+            function validate()
+{
+ var ddl = document.getElementById("cardtype");
+ var selectedValue = ddl.options[ddl.selectedIndex].value;
+    if (selectedValue == "selectcard")
+   {
+    alert("Please select a card type");
+   }
+}
         </script>
     </body>
 </html>
