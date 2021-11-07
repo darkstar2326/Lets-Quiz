@@ -7,8 +7,193 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+
     </head>
     <body>
-        <script  async defer></script>
+        <style>html{
+            background-color: black;
+            color: white;
+            scroll-behavior: smooth;
+        }
+        
+        nav{
+            float:right; 
+            background-color: black;
+        }
+        
+        .container{
+            clear:both;
+            overflow:auto;
+          }
+        
+          .logo img{
+            float:left;
+        }
+        
+        ul li{
+          display: inline-block; 
+          padding:10px;
+          font-size:20px; 
+          font-family:raleway; 
+          color: white;
+          transition: 1s;
+        }
+        
+        ul li:hover{
+          color:orange;
+          cursor: pointer;
+        }
+        
+        a:link {
+            text-decoration: none;
+            color: #ddd;
+          }
+          
+          a:visited {
+            text-decoration: none;
+            color: #ddd;
+          }
+          
+          a:hover {
+            text-decoration: none;
+            color: orange;
+            transition: 1s;
+          }
+          
+          a:active {
+            text-decoration: none;
+            color: #ddd;
+          }
+        
+          #welh1{
+            text-align: center;
+            border-color: white;
+            border-width: 2px;
+            font-family: 'Raleway', sans-serif;font-family: 'Raleway', sans-serif;
+        }
+        
+        .row {
+          display: flex;
+        }
+        
+        .column {
+          flex: 50%;
+          padding: 5px;
+        }
+        
+        #a, #g {
+          background-color: #4158D0;
+          background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+          ;
+        }
+        
+        .pic {
+          float: left;
+        }
+        
+        #wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 5%;
+        list-style-type: none;
+        text-decoration: none;
+        }
+        
+        #wrapper:hover{
+          color: white !important;
+          cursor: default !important;
+        }
+        
+        .pa{
+          float: right;
+          text-decoration: none;
+        }
+        
+        p{
+          float: right;
+          margin-left: 80%;
+        }
+        
+        ul li:hover{
+          cursor: default;
+          color: white;
+        }
+        
+        #box {
+            background-color: white;
+            width: 92.5%;
+            border: 2px solid green;
+            padding: 50px;
+            height: 250px;
+        }
+
+        .menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+@media only screen and (max-width:800px){
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+   }
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: #fff;
+    }
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+        width: 100px;
+    }
+}
+        </style>
+        <div class="container">
+            <div class="logo">
+              <img src="logo-main.png" alt="Logo" width="100px"/>
+              </div>
+            <nav>
+                <img src="menu.png" class="menu-icon" onclick="menutoggle()">
+                <ul id="MenuItems">
+                    <li><a href="index.html" target="blank">Home</a></li>
+            <li><a href="#footer">Follow Us</a></li>
+              <li><a href="aydoubt.html">Ask Your Doubts</a></li>
+              <li class="sign"><a href="signup.php">Sign Up/ Log In</a></li>
+              </ul>
+              </nav>    
+            </div>
+            <hr>
+            <h1 id="welh1"><span style='border:2px black solid;'>Scanned TextBooks<br>By<br>Let's Quiz</span></h1>
+            <div id="box">
+                <p>hi</p>
+            </div>
+        <script>
+var MenuItems = document.getElementById("MenuItems");
+            
+            MenuItems.style.maxHeight = "0px";
+            
+            function menutoggle(){
+                 if(MenuItems.style.maxHeight == "0px")
+                {
+                    MenuItems.style.maxHeight = "200px";
+                }
+            else
+                {
+                    MenuItems.style.maxHeight = "0px";
+                }
+            }
+           
+        </script>
     </body>
 </html>
